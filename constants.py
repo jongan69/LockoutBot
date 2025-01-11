@@ -18,9 +18,14 @@ RESET_TIMEOUT = 60  # seconds
 # Swap Settings
 MAX_RETRIES = 3
 RETRY_DELAY = 2  # seconds
-MAX_SWAP_AMOUNT = 100_000
-SWAP_FEE_PERCENTAGE = 0.005  # 0.5%
+MAX_SWAP_AMOUNT = 1000000
+SWAP_FEE_PERCENTAGE = 0.05
 SLIPPAGE_BPS = 100
 
-# Prometheus Metrics Port
-METRICS_PORT = 8000 
+# Transaction status
+TX_STATUS_PENDING = "pending"
+TX_STATUS_COMPLETED = "completed"
+TX_STATUS_FAILED = "failed"
+
+# History limits
+MAX_HISTORY_ITEMS = 5 
