@@ -13,16 +13,16 @@ from telegram.ext import (
 from pymongo import MongoClient
 from solana.rpc.api import Client
 from datetime import datetime, UTC
-from utils.validateBtcAddress import is_valid_bitcoin_address
-from utils.validateSolAddress import is_valid_solana_address
-from utils.getRatePreview import get_rate_preview
-from utils.createSwap import create_signed_jupiter_swap_tx
-from utils.initiateChangeNow import initiate_change_now_swap
-from utils.createTransfer import create_signed_usdc_transfer_tx
-from utils.getMinimumAmt import get_min_amount
-from jito.bundle import BundleStatus, send_bundle_with_tip
-from utils.getChangeNowStatus import get_status
-from utils.verifyDeposit import verify_usdc_deposit
+from validateBtcAddress import is_valid_bitcoin_address
+from validateSolAddress import is_valid_solana_address
+from getRatePreview import get_rate_preview
+from createSwap import create_signed_jupiter_swap_tx
+from initiateChangeNow import initiate_change_now_swap
+from createTransfer import create_signed_usdc_transfer_tx
+from getMinimumAmt import get_min_amount
+from bundle import BundleStatus, send_bundle_with_tip
+from getChangeNowStatus import get_status
+from verifyDeposit import verify_usdc_deposit
 
 class ChangeNowError(Exception):
     pass
